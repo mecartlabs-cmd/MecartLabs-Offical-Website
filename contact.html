@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MecartLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+        }
+
+        .contact-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: 40px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 16px 20px;
+            background: #050505;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: #fff;
+            margin-bottom: 20px;
+            font-family: var(--font-main);
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_final.png" alt="MecartLabs">
+                <!-- <span>MecartLabs</span> -->
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="training.html">Training</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="mobile-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <a href="contact.html" class="nav-cta">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-hero">
+        <div class="container">
+            <h1>GET IN TOUCH</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; letter-spacing: 0.5px;">Start your
+                project or join a training program today.</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-layout">
+
+                <!-- Info -->
+                <div class="contact-card">
+                    <h3 style="margin-bottom: 30px; font-size: 1.5rem;">Contact Info</h3>
+
+                    <div style="margin-bottom: 30px;">
+                        <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 5px;">Head Office
+                        </div>
+                        <div style="font-size: 1.1rem;">Kerala, India</div>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 5px;">Email</div>
+                        <div style="font-size: 1.1rem;">MecartLabs@gmail.com</div>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 5px;">Phone</div>
+                        <div style="font-size: 1.1rem;">+91 79944 94115</div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-card">
+                    <form>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div>
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>Subject</label>
+                            <input type="text" class="form-control" placeholder="Project Inquiry">
+                        </div>
+
+                        <div>
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5"
+                                placeholder="Tell us about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="MecartLabs">
+                        <span>MecartLabs</span>
+                    </a>
+                    <p>Engineering the future with precision, innovation, and design excellence.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Training</h4>
+                    <ul>
+                        <li><a href="training.html">SolidWorks</a></li>
+                        <li><a href="training.html">Fusion 360</a></li>
+                        <li><a href="training.html">AutoCAD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:MecartLabs@gmail.com">MecartLabs@gmail.com</a></li>
+                        <li><a href="tel:+917994494115">+91 79944 94115</a></li>
+                        <li> Kerala, India</li>
+                    </ul>
+                    <div style="margin-top: 20px; display: flex; gap: 15px;">
+                        <a href="https://www.instagram.com/mecartlabs?igsh=YXBhaHN6cTMzMmp0&utm_source=qr"
+                            target="_blank" style="color: var(--text-secondary);"><svg width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MecartLabs Technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

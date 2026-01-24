@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | MecartLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-bento {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .bento-card-product {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .bento-card-product:hover {
+            border-color: var(--text-primary);
+            transform: translateY(-5px);
+        }
+
+        .product-img-box {
+            height: 250px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+        }
+
+        .product-content-box {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_final.png" alt="MecartLabs">
+                <!-- <span>MecartLabs</span> -->
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="training.html">Training</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="mobile-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <a href="contact.html" class="nav-cta">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-hero">
+        <div class="container">
+            <h1>INNOVATIVE PRODUCTS</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; letter-spacing: 0.5px;">Explore
+                our portfolio of engineered solutions.</p>
+        </div>
+    </header>
+
+    <!-- Products Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="product-bento">
+
+                <!-- Product 1 -->
+                <div class="bento-card-product">
+                    <div class="product-img-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="product-content-box">
+                        <div
+                            style="font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; color: #fff; opacity: 0.5; margin-bottom: 5px;">
+                            Aerospace</div>
+                        <h3 style="margin-bottom: 10px;">Drone Frame V2</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">Lightweight carbon-fiber frame for
+                            high-speed racing.</p>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">View Specs</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bento-card-product">
+                    <div class="product-img-box" style="background: #151515;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                            <line x1="9" y1="1" x2="9" y2="4"></line>
+                            <line x1="15" y1="1" x2="15" y2="4"></line>
+                            <line x1="9" y1="20" x2="9" y2="23"></line>
+                            <line x1="15" y1="20" x2="15" y2="23"></line>
+                            <line x1="20" y1="9" x2="23" y2="9"></line>
+                            <line x1="20" y1="14" x2="23" y2="14"></line>
+                            <line x1="1" y1="9" x2="4" y2="9"></line>
+                            <line x1="1" y1="14" x2="4" y2="14"></line>
+                        </svg>
+                    </div>
+                    <div class="product-content-box">
+                        <div
+                            style="font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; color: #fff; opacity: 0.5; margin-bottom: 5px;">
+                            Consumer Electronics</div>
+                        <h3 style="margin-bottom: 10px;">Smart Wearable Case</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">IP68 rated shock resistant casing
+                            design.</p>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">View Specs</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bento-card-product">
+                    <div class="product-img-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="product-content-box">
+                        <div
+                            style="font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; color: #fff; opacity: 0.5; margin-bottom: 5px;">
+                            Medical Tech</div>
+                        <h3 style="margin-bottom: 10px;">Lab Automation Arm</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">High-precision mechanism for
+                            liquid handling.</p>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">View Specs</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="MecartLabs">
+                        <span>MecartLabs</span>
+                    </a>
+                    <p>Engineering the future with precision, innovation, and design excellence.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Training</h4>
+                    <ul>
+                        <li><a href="training.html">SolidWorks</a></li>
+                        <li><a href="training.html">Fusion 360</a></li>
+                        <li><a href="training.html">AutoCAD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:MecartLabs@gmail.com">MecartLabs@gmail.com</a></li>
+                        <li><a href="tel:+917994494115">+91 79944 94115</a></li>
+                        <li> Kerala, India</li>
+                    </ul>
+                    <div style="margin-top: 20px; display: flex; gap: 15px;">
+                        <a href="https://www.instagram.com/mecartlabs?igsh=YXBhaHN6cTMzMmp0&utm_source=qr"
+                            target="_blank" style="color: var(--text-secondary);"><svg width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MecartLabs Technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

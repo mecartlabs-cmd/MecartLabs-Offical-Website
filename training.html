@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Programs | MecartLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .training-bento {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .bento-card-training {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .bento-card-training:hover {
+            background: #1e1e1e;
+            transform: translateY(-5px);
+            border-color: var(--text-secondary);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_final.png" alt="MecartLabs">
+                <!-- <span>MecartLabs</span> -->
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="training.html" class="active">Training</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="mobile-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <a href="contact.html" class="nav-cta">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-hero">
+        <div class="container">
+            <h1>PROFESSIONAL TRAINING</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; letter-spacing: 0.5px;">Master the
+                industry-standard tools used by engineers worldwide.</p>
+        </div>
+    </header>
+
+    <!-- Training BENTO -->
+    <section style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="training-bento">
+
+                <!-- AutoCAD -->
+                <div class="bento-card-training">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">AutoCAD</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; flex-grow: 1;">2D drafting and
+                        documentation for precise technical drawings.</p>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- SolidWorks -->
+                <div class="bento-card-training" style="background: #E2E8F0; color: #000;">
+                    <div
+                        style="background: #000; color: #fff; border-radius: 12px; padding: 5px 12px; font-size: 0.8rem; font-weight: 700; align-self: flex-end; margin-bottom: 15px;">
+                        POPULAR</div>
+                    <div class="icon-box" style="background: rgba(0,0,0,0.1); color: #000;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M5.6 15.6a8.5 8.5 0 0 1 0-7.2"></path>
+                            <path d="M18.4 8.4a8.5 8.5 0 0 1 0 7.2"></path>
+                            <path d="M8.4 18.4a8.5 8.5 0 0 1 7.2 0"></path>
+                            <path d="M15.6 5.6a8.5 8.5 0 0 1-7.2 0"></path>
+                        </svg>
+                    </div>
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">SolidWorks</h3>
+                    <p style="color: #444; margin-bottom: 25px; flex-grow: 1;">The industry standard for mechanical
+                        design and 3D modeling.</p>
+                    <a href="contact.html" class="btn btn-primary"
+                        style="width: 100%; background: #000; color: #fff;">Enroll Now</a>
+                </div>
+
+                <!-- Fusion 360 -->
+                <div class="bento-card-training">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">Fusion 360</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; flex-grow: 1;">Integrated CAD, CAM, and
+                        CAE for cloud-based collaboration.</p>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- CATIA -->
+                <div class="bento-card-training">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
+                            </path>
+                            <path d="M18 14h-8"></path>
+                            <path d="M15 18h-5"></path>
+                            <path d="M10 6h8v4h-8V6Z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">CATIA</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; flex-grow: 1;">Advanced surfacing and
+                        systems engineering for aerospace.</p>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- Creo -->
+                <div class="bento-card-training">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">Creo</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; flex-grow: 1;">Powerful 3D CAD
+                        parametric modeling.</p>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- NX CAD -->
+                <div class="bento-card-training">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">NX CAD</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; flex-grow: 1;">High-end solution for
+                        integrated product design.</p>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- Ansys -->
+                <div class="bento-card-training">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12h20"></path>
+                            <path d="M2 12l5-5"></path>
+                            <path d="M2 12l5 5"></path>
+                            <path d="M22 12l-5-5"></path>
+                            <path d="M22 12l-5 5"></path>
+                            <circle cx="12" cy="12" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">Ansys</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; flex-grow: 1;">Master engineering
+                        simulation and physics-based analysis.</p>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Enroll Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="MecartLabs">
+                        <span>MecartLabs</span>
+                    </a>
+                    <p>Engineering the future with precision, innovation, and design excellence.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Training</h4>
+                    <ul>
+                        <li><a href="training.html">SolidWorks</a></li>
+                        <li><a href="training.html">Fusion 360</a></li>
+                        <li><a href="training.html">AutoCAD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:MecartLabs@gmail.com">MecartLabs@gmail.com</a></li>
+                        <li><a href="tel:+917994494115">+91 79944 94115</a></li>
+                        <li> Kerala, India</li>
+                    </ul>
+                    <div style="margin-top: 20px; display: flex; gap: 15px;">
+                        <a href="https://www.instagram.com/mecartlabs?igsh=YXBhaHN6cTMzMmp0&utm_source=qr"
+                            target="_blank" style="color: var(--text-secondary);"><svg width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MecartLabs Technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
