@@ -289,7 +289,175 @@ footer {
   font-size: 0.85rem;
 }
 
-/* Responsive Design */
+
+
+/* =========================================
+   Migrated Styles from index.html
+   ========================================= */
+
+/* Modern Hero Bento Grid */
+.hero-section {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.hero-bento {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 500px 300px;
+  gap: 20px;
+}
+
+/* Large Main Card */
+.hero-main {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background: radial-gradient(circle at bottom right, #1a1a1a 0%, #0F0F0F 100%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/hero_blueprint.png') center/cover no-repeat;
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 80%;
+}
+
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+/* Secondary Top Card - Services */
+.hero-secondary-top {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background: #0F0F0F;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-secondary-top h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.service-list-hero li {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-list-hero li:last-child {
+  border-bottom: none;
+}
+
+/* Secondary Bottom Card - Training CTA */
+.hero-secondary-bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: #E2E8F0;
+  color: #000;
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-secondary-bottom h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.hero-secondary-bottom p {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.arrow-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Stats Strip */
+.stats-strip {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  padding: 40px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stat-block {
+  text-align: center;
+}
+
+.stat-block h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.stat-block span {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   Responsive Design (Mobile & Tablet)
+   ========================================= */
 
 /* Tablet & Mobile (max-width: 1024px) */
 @media (max-width: 1024px) {
@@ -301,12 +469,16 @@ footer {
   .hero-bento {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    /* Stack content */
+  }
+
+  .hero-main,
+  .hero-secondary-top,
+  .hero-secondary-bottom {
+    grid-column: 1 / -1;
+    grid-row: auto;
   }
 
   .hero-main {
-    grid-column: 1 / -1;
-    grid-row: auto;
     min-height: 500px;
     padding: 40px;
   }
@@ -319,33 +491,40 @@ footer {
     font-size: 3rem;
   }
 
-  .hero-secondary-top {
-    grid-column: 1 / -1;
-    grid-row: auto;
-  }
-
-  .hero-secondary-bottom {
-    grid-column: 1 / -1;
-    grid-row: auto;
-  }
-
   .stats-strip {
     padding: 30px 0;
     flex-wrap: wrap;
-    /* Allow wrapping */
     gap: 30px;
   }
 
   .stats-strip .stat-block {
     flex: 1 1 40%;
-    /* 2 stats per row */
-    text-align: center;
     margin-right: 0 !important;
   }
 }
 
 /* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
+
+  /* Prevent horizontal scroll */
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .bento-card {
+    padding: 24px;
+    width: 100%;
+  }
+
+  /* Optimized Navbar */
   .navbar {
     width: 90%;
     left: 50%;
@@ -356,40 +535,86 @@ footer {
 
   .nav-links {
     display: none;
-    /* Hidden by default */
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
-    background: rgba(20, 20, 20, 0.95);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(15, 15, 15, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 30px 20px;
+    border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 999;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   }
 
   .nav-links.active {
     display: flex;
   }
 
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
   .nav-cta {
     display: none;
-    /* Hide CTA on mobile, maybe move into menu */
   }
 
   .mobile-toggle {
     display: block;
   }
 
+  /* Hero Section Optimizations */
   .page-hero {
     padding: 140px 0 40px;
   }
 
-  .page-hero h1 {
-    font-size: 2.5rem;
+  .hero-title {
+    font-size: 2rem;
+    /* Reduced for iPhone 14 Pro */
+    line-height: 1.2;
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Hero Buttons - Full Width */
+  .hero-content div[style*="flex"] {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px !important;
+  }
+
+  .hero-content .btn {
+    width: 100%;
+  }
+
+  /* Stats Strip - 2x2 Grid */
+  .stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .stat-block {
+    flex: unset;
+    min-width: 0;
+  }
+
+  .stat-block h4 {
+    font-size: 2rem;
   }
 
   .footer-grid {
@@ -404,7 +629,6 @@ footer {
     text-align: center;
   }
 
-  /* Services & Contact Stacking */
   .contact-layout {
     grid-template-columns: 1fr;
   }
