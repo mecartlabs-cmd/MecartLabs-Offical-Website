@@ -115,36 +115,51 @@
 
                 <!-- Form -->
                 <div class="contact-card">
-                    <form>
+                    <form
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8DYFX0XdM4XnNutngrO3Q5k01NgSyIpPyDNEyeVVqTuivUQ/formResponse"
+                        method="POST" target="hidden_iframe" onsubmit="window.showSuccessModal();">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                             <div>
                                 <label>Name</label>
-                                <input type="text" class="form-control" placeholder="John Doe">
+                                <input type="text" name="entry.47896592" class="form-control" placeholder="John Doe"
+                                    required>
                             </div>
                             <div>
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="john@example.com">
+                                <input type="email" name="entry.1114873360" class="form-control"
+                                    placeholder="john@example.com" required>
                             </div>
-                        </div>
-
-                        <div>
-                            <label>Subject</label>
-                            <input type="text" class="form-control" placeholder="Project Inquiry">
                         </div>
 
                         <div>
                             <label>Message</label>
-                            <textarea class="form-control" rows="5"
-                                placeholder="Tell us about your project..."></textarea>
+                            <textarea name="entry.2026279986" class="form-control" rows="5"
+                                placeholder="Tell us about your project..." required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
+
+    <!-- Hidden Iframe for Form Submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <!-- Success Modal -->
+    <div id="success-modal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); z-index: 2000; align-items: center; justify-content: center;">
+        <div class="bento-card"
+            style="max-width: 400px; text-align: center; border-color: var(--text-primary); box-shadow: 0 0 30px rgba(255,255,255,0.1);">
+            <img src="images/logo_final.png" alt="MecartLabs"
+                style="height: 25px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.3)); display: block; margin-left: auto; margin-right: auto;">
+            <h3 style="margin-bottom: 10px; font-size: 1.5rem; color: var(--text-primary);">Message Sent!</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 30px;">Thank you for reaching out. We'll get back to
+                you shortly.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
