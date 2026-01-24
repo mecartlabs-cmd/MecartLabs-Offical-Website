@@ -683,14 +683,21 @@ footer {
     font-size: 2rem;
   }
 
-  /* Force vertical stacking for Services/Training grids if flex/grid used */
-  .services-grid,
-  .training-grid,
-  .products-grid {
+  /* Force vertical stacking for Services/Training grids */
+  .services-layout,
+  .training-bento,
+  .product-bento {
     display: flex !important;
     flex-direction: column !important;
     gap: 30px;
   }
+
+  /* Or if grid used */
+  [class*="bento"],
+  [class*="layout"] {
+    grid-template-columns: 1fr !important;
+  }
+
 
   /* Or if grid used */
   [class*="grid"] {
