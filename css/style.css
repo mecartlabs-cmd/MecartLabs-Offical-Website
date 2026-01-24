@@ -622,13 +622,21 @@ footer {
   /* Critical Fix: Hero Title Typography for All Pages */
   .hero-title,
   .page-hero h1 {
-    font-size: 2rem !important;
-    /* Force smaller size */
-    line-height: 1.2;
+    font-size: 1.8rem !important;
+    /* Smaller size to fit long words */
+    line-height: 1.1;
     word-break: normal;
-    overflow-wrap: break-word;
-    hyphens: auto;
+    /* Default break behavior */
+    overflow-wrap: normal;
+    /* Try not to break words */
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none !important;
+    /* Strict no-hyphens rule */
     width: 100%;
+    text-align: center !important;
+    padding: 0 2px;
+    /* Maximum horizontal space */
   }
 
   .hero-subtitle,
@@ -718,7 +726,9 @@ footer {
   }
 
   .about-card h2 {
-    font-size: 2rem !important;
-    /* Fix oversized header */
+    font-size: 1.8rem !important;
+    /* Resize to match hero confidence */
+    hyphens: none !important;
+    word-break: keep-all;
   }
 }
